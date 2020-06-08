@@ -343,7 +343,6 @@ void ImageViewer::keyPressEvent(QKeyEvent *event){
 }
 
 void ImageViewer::dragEnterEvent(QDragEnterEvent *event){
-    qDebug()<<"dragEnterEvent = "<<event->mimeData()->urls()[0].toLocalFile();
     if(!event->mimeData()->urls()[0].toLocalFile().right(3).compare("jpg",Qt::CaseInsensitive)
             ||!event->mimeData()->urls()[0].toLocalFile().right(3).compare("png",Qt::CaseInsensitive)
             ||!event->mimeData()->urls()[0].toLocalFile().right(3).compare("bmp",Qt::CaseInsensitive)
